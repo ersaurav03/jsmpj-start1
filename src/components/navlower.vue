@@ -13,13 +13,13 @@
 									<router-link to="/" class="nav-link">Home</router-link>
 								</li>
 								<li class="nav-item ">
-									<a class="nav-link" href="#">ABOUT</a>
+									<router-link to="/About" class="nav-link">About</router-link>
 								</li>
 								<li class="nav-item ">
 								<router-link to="/login" class="nav-link">Login</router-link>
 								</li>
 								<li class="nav-item ">
-									<a  href="#">PAGES</a>
+									<a  href="#">PAGES1</a>
 								</li>
 								<li class="nav-item ">
 									<a class="nav-link" href="#">SHOP</a>

@@ -1,5 +1,5 @@
 <template>
-	<div class="login">
+	<div class="About">
     <navupper></navupper>
     <navlower></navlower>	
     <slider></slider>
@@ -15,7 +15,7 @@ import footerup from '../components/footerup'
 import footerdown from '../components/footerdown'
 import slider from '../components/slider'
 export default {
-  name: 'login',
+  name: 'About',
   components: {
      navupper,
     navlower,
