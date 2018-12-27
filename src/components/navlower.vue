@@ -10,19 +10,19 @@
 			 <div class="collapse navbar-collapse" id="id1">
 					 <ul class="navbar-nav">
 								<li class="nav-item ">
-									<a class="nav-link text-primary " href="#">HOME</a>
+									<router-link to="/" class="nav-link">Home</router-link>
+								</li>
+								<li class="nav-item ">
+									<a class="nav-link" href="#">ABOUT</a>
+								</li>
+								<li class="nav-item ">
+								<router-link to="/login" class="nav-link">Login</router-link>
+								</li>
+								<li class="nav-item ">
+									<a  href="#">PAGES</a>
 								</li>
 								<li class="nav-item ">
 									<a class="nav-link" href="#">SHOP</a>
-								</li>
-								<li class="nav-item ">
-									<a class="nav-link" href="#">BLOG</a>
-								</li>
-								<li class="nav-item ">
-									<a class="nav-link" href="#">PAGES</a>
-								</li>
-								<li class="nav-item ">
-									<a class="nav-link" href="#">SHORTCODE</a>
 								</li>
 								<li class="nav-item ">
 									<a class="nav-link" href="#">CONTACTS</a>
