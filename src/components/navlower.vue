@@ -51,7 +51,8 @@
 	export default{
 		data:function(){
 			return {
-				counter:0
+				counter:0,
+				navv: ['HOME','ABOUT','CONTACTS','ACCOUNT']
 			}
 		},
 		created()
