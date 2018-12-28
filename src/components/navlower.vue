@@ -10,23 +10,22 @@
 			 <div class="collapse navbar-collapse" id="id1">
 					 <ul class="navbar-nav">
 								<li class="nav-item ">
-									<router-link to="/" class="nav-link">Home</router-link>
+									<router-link to="/" class="nav-link">HOME</router-link>
 								</li>
 								<li class="nav-item ">
-									<router-link to="/About" class="nav-link">About</router-link>
+									<router-link to="/About" class="nav-link">ABOUT</router-link>
 								</li>
 								<li class="nav-item ">
-								<router-link to="/login" class="nav-link">Login</router-link>
+									<router-link to="/" class="nav-link">CONTACTS</router-link>
 								</li>
 								<li class="nav-item ">
-									<a  href="#">PAGES1</a>
+								<router-link to="/login" class="nav-link">ACCOUNT</router-link>
 								</li>
-								<li class="nav-item ">
-									<a class="nav-link" href="#">SHOP</a>
-								</li>
-								<li class="nav-item ">
-									<a class="nav-link" href="#">CONTACTS</a>
-								</li>
+								<!-- <li class="nav-item ">
+									<router-link to="/" class="nav-link">PAGES</router-link>
+								</li> -->
+
+
 					</ul>
 					<ul class="navbar-nav">
 						<li class="nav-item">

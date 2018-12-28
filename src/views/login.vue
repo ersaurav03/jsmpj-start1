@@ -4,24 +4,15 @@
     <navlower></navlower>	
     <div class="container">
     	<div class="row">
-    		<div class="col-xs-12">
-    			<form>
-	              <div class="form-group">
-		            <label class="text-primary float-left" for="Name"> Email Id</label>
-		            <input class="form-control" type="email" id="Email" placeholder="Enter your valid Email id">
-		            <label class="text-primary float-left" for="Name"> Password</label>
-		            <input class="form-control" type="password" id="password" placeholder="Enter password"><br>
-		            <div class="d-flex justify-content-start pl-3"><label class="form-check-label">
-        		    <input type="checkbox" class="form-check-input">Stay Sign in
-        	         </label></div><br>
-		            <button class="btn btn-primary btn-block" type="submit">SignIn</button>
-                    <h6>or</h6>
-                     <button class="btn btn-primary btn-block" type="submit">SignUp</button>
-	               </div>
-	           </form>
+    		<div class="col-sm-4">
+                     <router-link to="/signin" class="text-light"><button class="btn btn-primary btn-block">SignIn </button></router-link>
+                     or
+                     <router-link to="/signup" class="text-light"><button class="btn btn-primary d-block w1">SignUp</button></router-link>
+                     <br>
     		</div>
     	</div>
     </div>
+
     <footerup></footerup>
     <footerdown></footerdown>
 	</div>
@@ -44,5 +35,8 @@ export default {
 </script>
 
 <style>
-	
+	.w1
+    {
+        width: 100%;
+    }
 </style>
