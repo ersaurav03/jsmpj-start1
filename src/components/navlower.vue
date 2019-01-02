@@ -9,10 +9,10 @@
 
 			 <div class="collapse navbar-collapse" id="id1">
 					 <ul class="navbar-nav">
-								<li class="nav-item ">
-									<router-link to="/" class="nav-link">HOME</router-link>
+								<li v-for="nav1 in navv" class="nav-item ">
+									<router-link to="/" class="nav-link">{{nav1}}</router-link>
 								</li>
-								<li class="nav-item ">
+<!-- 								<li class="nav-item ">
 									<router-link to="/About" class="nav-link">ABOUT</router-link>
 								</li>
 								<li class="nav-item ">
@@ -20,7 +20,7 @@
 								</li>
 								<li class="nav-item ">
 								<router-link to="/login" class="nav-link">ACCOUNT</router-link>
-								</li>
+								</li> -->
 								<!-- <li class="nav-item ">
 									<router-link to="/" class="nav-link">PAGES</router-link>
 								</li> -->
@@ -52,7 +52,8 @@
 		data:function(){
 			return {
 				counter:0,
-				navv: ['HOME','ABOUT','CONTACTS','ACCOUNT']
+				navv: ['HOME','ABOUT','CONTACTS','ACCOUNT'],
+				linkk:['/','/About','/','/login','/']
 			}
 		},
 		created()
