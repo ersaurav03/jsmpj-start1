@@ -3,20 +3,20 @@
 <div class="container">
 	<div class="row ">
 
-		<div class=" col-xl-3 col-md-4 col-lg-4 col-sm-6 designn border border-light shadow-md p-3  bg-white rounded">
+		<div class=" col-xl-3 col-md-4 col-lg-4 col-sm-6 designn border border-light shadow-md p-3  bg-white rounded" v-for="arr1 in arr">
 			<div class="row">
 
 				<div class="col-sm-12 d-flex justify-content-center">
 					<div class="flip3d ">
-						<div class="front bg-light b1">
+						<div class="front bg-light" :class="arr1.s1">
 							<div class=" d-flex justify-content-center">
-								<i class="text-primary  fas fa-bezier-curve fa-3x p-5"></i>
+								<i :class="arr1.i1"></i>
 							</div>
 						</div>
 
 						<div class="back bg-primary">
 							<div class="d-flex justify-content-center">
-								<i class="text-light fas fa-bezier-curve fa-3x p-5"></i>
+								<i :class="arr1.i2"></i>
 							</div>
 						</div>
 
@@ -24,25 +24,25 @@
 				</div>
 
 
-				<div class="col-sm-12 a1">
-					<div class="d-flex justify-content-center"><h4 >Incredible Design</h4></div>
+				<div class="col-sm-12" :class="arr1.s2">
+					<div class="d-flex justify-content-center"><h4 >{{arr1.h}}</h4></div>
 				</div>
 
 					<div class="col-sm-12">
 						<div class="d-flex justify-content-center text-primary ">
-							<i class="fa fa-times " aria-hidden="true"></i>
+							<i :class="arr1.i3" aria-hidden="true" class="text-dark"></i>
 						</div>
 					</div>
 
 					<div>
 						<div class="d-flex justify-content-center">
-							<h6><p>Lorem ipsum dolort amet sectetur elit In augue nisl, ornare volutpat aliquam eget etlibura</p></h6>
+							<h6><p>{{arr1.p}}</p></h6>
 						</div>
 					</div>
 
 				</div> 
 			</div>
-
+<!-- 
 
 			<div class=" col-xl-3 col-md-4 col-lg-4 col-sm-6  border border-light shadow-md p-3  bg-white rounded">
 				<div class="row">
@@ -156,11 +156,25 @@
 				</div>
 
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 </template>
 
+<script>
+	export default{
+		data:function(){
+			return{
+				arr:[
+				{i1:'text-primary  fas fa-bezier-curve fa-3x p-5',i2:'text-light fas fa-bezier-curve fa-3x p-5',i3:'fa fa-times',h:'Incredible Design',p:'Lorem ipsum dolort amet sectetur elit In augue nisl, ornare volutpat aliquam eget etlibura',s1:'b1',s2:'a1'},
+				{i1:'text-info fas fa-layer-group fa-3x p-5',i2:'text-light  fas fa-layer-group fa-3x fa-flip-horizontal  p-5',i3:'fa fa-times',h:'Amazing Elements',p:'Lorem ipsum dolort amet sectetur elit In augue nisl, ornare volutpat aliquam eget etlibura',s1:'b2',s2:'a2'},
+				{i1:'text-success fas fa-coffee fa-3x p-5',i2:'text-light fas fa-coffee fa-3x fa-flip-horizontal  p-5',i3:'fa fa-times',h:'Friendly Support',p:'Lorem ipsum dolort amet sectetur elit In augue nisl, ornare volutpat aliquam eget etlibura',s1:'b3',s2:'a3'},
+				{i1:'text-danger fas fa-headphones-alt fa-3x p-5',i2:'text-light fas fa-headphones-alt fa-3x p-5',i3:'fa fa-times',h:'Easy Customiozation',p:'Lorem ipsum dolort amet sectetur elit In augue nisl, ornare volutpat aliquam eget etlibura',s1:'b4',s2:'a4'}
+				]
+			}
+		}
+	}
+</script>
 	<style>
 			div.white
 		{
