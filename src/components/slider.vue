@@ -28,6 +28,7 @@
 													</div>
 												</div>
 
+										    </div>
 												<div class="carousel-item">
 													<img src="../../public/images/slider2.png" class="d-block img-fluid">
 													<div class="carousel-caption d-none d-md-block">
@@ -58,9 +59,9 @@
 		{
 			return{
 				path:[
-				{link:'../../public/images/slider0.png'}
-				// {link:'../../public/images/slider1.png'},
-				// {link:'../../public/images/slider2.png'}
+				{link:'images/slider0.png',s:0},
+				{link:'images/slider1.png',s:1},
+				{link:'images/slider2.png',s:2}
 				]
 			}
 		}
