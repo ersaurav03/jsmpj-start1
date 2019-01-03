@@ -11,13 +11,13 @@
 										</ol>
                                              <!-- Things which will display inside slider--->
 										<div class="carousel-inner">
-											<div class="carousel-item active">
+											<div  class="carousel-item active" >
 												<img src="../../public/images/slider0.png" class="d-block img-fluid">
 												<div class="carousel-caption d-none d-md-block">
 													<div  class="d-flex  justify-content-start pb-5">
 														<button type="button" class="btn btn-primary text-light">Check it out</button></div>
 													</div>
-												</div>
+										    </div>
 
 												<div class="carousel-item">
 													<img src="../../public/images/slider1.png" class="d-block img-fluid">
@@ -51,3 +51,18 @@
 <style>
 	
 </style>
+
+<script>
+	export default{
+		data:function()
+		{
+			return{
+				path:[
+				{link:'../../public/images/slider0.png'}
+				// {link:'../../public/images/slider1.png'},
+				// {link:'../../public/images/slider2.png'}
+				]
+			}
+		}
+	}
+</script>
