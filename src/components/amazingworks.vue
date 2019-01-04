@@ -3,7 +3,6 @@
 		<div class="container">
 			<h2 class="pt-5 pb-4"> Amazing <b>Works</b></h2>
 			<div class="row">
-
 				<div class="col-sm-6 col-md-6 col-lg-3  border border-light" v-for="p in picture">
 					<div class="d-flex justify-content-center p-5">
 						<div class="view overlay"><img :src="p" class="img-responsive" height="250px" width="150px">
@@ -12,9 +11,8 @@
 						</div>
 					</div>
 				</div>
-
 				<br>
-		</div>
+		    </div>
 		<div class="pb-5">
 			<!-------Padding added for gap frm bottom----------------------->
 		</div>
