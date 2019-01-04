@@ -12,7 +12,7 @@
 						<div class="d-flex justify-content-start"><i :class="arr1.i1"></i></div><br>
 						<div class="d-flex justify-content-start"><b text-light>{{arr1.h}}</b></div>
 						<div class="d-flex justify-content-start"><i :class="arr1.i2" aria-hidden="true"></i></div>
-						<div class="d-flex justify-content-center"><p><h6>{{arr1.p}}</h6></p></div>
+						<div class="text-justify"><p><h6>{{arr1.p}}</h6></p></div>
 					</div>
 
 <!-- 					<div class="col-sm-6 col-md-6 p-5 bg-dark border border-light "> 

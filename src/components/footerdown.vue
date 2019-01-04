@@ -8,13 +8,13 @@
 				</div>
 			</div>
 
-			<div class="col-sm-6 footerdown p-3 d-flex justify-content-end">
-				<i class="fab fa-cc-visa fa-3x"></i>
-				<i class="fab fa-cc-mastercard fa-3x"></i>
+			<div class="col-sm-6 footerdown p-3 d-flex justify-content-end" >
+				<i v-for="arr1 in arr" :class="arr1"></i>
+<!-- 				<i class="fab fa-cc-mastercard fa-3x"></i>
 				<i class="fab fa-cc-paypal fa-3x"></i>
 				<i class="fab fa-cc-discover fa-3x"></i>
 				<i class="fab fa-cc-amex fa-3x"></i>
-				<i class="fab fa-cc-stripe fa-3x"></i>
+				<i class="fab fa-cc-stripe fa-3x"></i> -->
 			</div>
 
 		</div>
@@ -31,3 +31,19 @@ border-style: none;
 }
 
 </style>
+<script>
+	export default{
+		data:function(){
+			return{
+				arr:[
+				'fab fa-cc-visa fa-3x',
+				'fab fa-cc-mastercard fa-3x',
+				'fab fa-cc-paypal fa-3x',
+				'fab fa-cc-discover fa-3x',
+				'fab fa-cc-amex fa-3x',
+				'fab fa-cc-stripe fa-3x'
+				]
+			}
+		}
+	}
+</script>

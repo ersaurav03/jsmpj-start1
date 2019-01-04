@@ -17,13 +17,13 @@
 </div>
 <div class="col col-sm-6 col-md-6 ">
    <div class="row">
-	<div class="col col-sm-12 col-md-12 col-lg-12 wwchose1">
-		<h6>Stratergy 79%</h6>
+	<div class="col col-sm-12 col-md-12 col-lg-12 wwchose1" v-for="arr1 in arr">
+		<h6>{{arr1.h}}</h6>
 		<div class="progress sm-progress">
-			<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated w1" role="progressbar"  aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+			<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated " :class="arr1.w" role="progressbar"  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
 		</div>
 	</div>
-	<div class="col col-sm-12 col-md-12 col-lg-12 ">
+<!-- 	<div class="col col-sm-12 col-md-12 col-lg-12 ">
 		<h6>Marketing 96%</h6>
 		<div class="progress">
 			<div class="progress-bar bg-success progress-bar-striped progress-bar-animated w2" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" >     
@@ -43,7 +43,7 @@
 			<div class="progress-bar bg-warning  progress-bar-striped progress-bar-animated w4 pb-5" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">     
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>
 </div>	
 </div>
@@ -74,3 +74,17 @@ div.w4
 width: 92%
 }
 </style>
+
+<script>
+	export default{
+		data:function(){
+			return{
+				arr:[{h:'Stratergy 79%',w:'w1'},
+				{h:'Marketing 96%',w:'w2'},
+				{h:'Wordpress Theme 65%',w:'w3'},
+				{h:'UI/UX Design 92%',w:'w4'}
+				]
+			}
+		}
+	}
+</script>

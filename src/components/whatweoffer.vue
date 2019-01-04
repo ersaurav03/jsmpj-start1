@@ -22,7 +22,7 @@
 					<h4>{{link1.Heading}}</h4>
 		     </div>	
 
-			<div class="d-flex justify-content-center">
+			<div class="text-justify">
 					<p><h6>{{link1.parag}}</h6></p>
 			</div>
 

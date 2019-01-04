@@ -35,7 +35,7 @@
 					</div>
 
 					<div>
-						<div class="d-flex justify-content-center">
+						<div class="text-justify">
 							<h6><p>{{arr1.p}}</p></h6>
 						</div>
 					</div>
