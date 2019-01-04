@@ -20,7 +20,7 @@
 		<div class="col-md-12 footerup1 ">
 			<h4>FOLLOW US ON</h4>
 			<br>
-			<i       v-for="i2 in icon1" :class="i2.d"data-toggle="tooltip" data-placement="top" title="Twitter"> </i>
+			<i       v-for="i2 in icon1" :class="i2.d"data-toggle="tooltip" data-placement="top" :title="i2.t"> </i>
 
 <!-- 			<i class="fab fa-facebook-square fa-2x"  data-toggle="tooltip" data-placement="top" title="Facebook"></i>
 			<i class="fab fa-dribbble-square fa-2x" data-toggle="tooltip" data-placement="top" title="Dribble"></i>

@@ -20,11 +20,11 @@
 
                                                         <!--------------Code for icons---------------->
 				<div class=" col-sm-12 col-lg-2 my-1"> 
-					<i class="fab fa-twitter-square mr-1" aria-hidden="true"></i>
-					<i class="fab fa-facebook-square mr-1" aria-hidden="true"></i>
+					<i v-for="arr1 in arr" :class="arr1" aria-hidden="true"></i>
+<!-- 					<i class="fab fa-facebook-square mr-1" aria-hidden="true"></i>
 					<i class="fab fa-linkedin-square mr-1" aria-hidden="true"></i>
 					<i class="fab fa-dribbble mr-1" aria-hidden="true"></i>
-					<i class="fab fa-instagram mr-1" aria-hidden="true"></i>
+					<i class="fab fa-instagram mr-1" aria-hidden="true"></i> -->
 				</div> 
 
 				                                        <!------Code for space interms of coluns------>
@@ -54,3 +54,18 @@ div.fontsizees
 font-size: 20px;
 }
 </style>
+
+<script>
+	export default{
+		data:function(){
+			return{
+				arr:[
+				'fab fa-twitter-square mr-1',
+				'fab fa-facebook-square mr-1',
+				'fab fa-linkedin-square mr-1',
+				'fab fa-dribbble mr-1',
+				'fab fa-instagram mr-1']
+			}
+		}
+	}
+</script>
