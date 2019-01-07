@@ -15,7 +15,7 @@
 						<img src="../../public/images/slider0.png" class="d-block img-fluid">
 						<div class="carousel-caption d-none d-md-block">
 							<div  class="d-flex  justify-content-start pb-5">
-								<button type="button" class="btn btn-primary text-light">Check it out</button>
+								<button type="button" class="btn btn-primary text-light" @click="navigateToAbout">Check it out</button>
 							</div>
 						</div>
 					</div>
@@ -24,7 +24,7 @@
 							<img src="../../public/images/slider1.png" class="d-block img-fluid">
 							<div class="carousel-caption d-none d-md-block">
 								<div  class="d-flex justify-content-center pb-5">
-									<button type="button" class="btn btn-primary text-light">Check it out</button>
+									<button type="button" class="btn btn-primary text-light" @click="navigateToAbout">Check it out</button>
 								</div>
 							</div>
 						</div>
@@ -34,7 +34,7 @@
 						<img src="../../public/images/slider2.png" class="d-block img-fluid">
 						<div class="carousel-caption d-none d-md-block">
 							<div  class="d-flex justify-content-end pb-5">
-								<button type="button" class="btn btn-primary text-light">Check it out</button>
+								<button type="button" class="btn btn-primary text-light" @click="navigateToAbout">Check it out</button>
 							</div>
 						</div>
 					</div>
@@ -64,6 +64,11 @@ export default{
 			{link:'images/slider1.png',s:1},
 			{link:'images/slider2.png',s:2}
 			]
+		}
+	},
+	methods:{
+		navigateToAbout(){
+			this.$router.push('/about');
 		}
 	}
 }
