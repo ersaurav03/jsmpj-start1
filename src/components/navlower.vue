@@ -8,7 +8,7 @@
 
 			<div class="collapse navbar-collapse" id="id1">
 				<ul class="navbar-nav">
-					<li v-for="nav1 in navv" class="nav-item ">
+					<li v-bind:key="nav1" v-for="nav1 in navv" class="nav-item ">
 						<router-link :to="nav1.link" class="nav-link">{{nav1.name}}</router-link>
 					</li>
 				</ul>

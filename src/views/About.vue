@@ -15,13 +15,14 @@
 <footerdown></footerdown>
 </div>
 </template>
+
+
 <script>
 import navupper from '../components/navupper.vue'
 import navlower from '../components/navlower.vue'
 import footerup from '../components/footerup'
 import footerdown from '../components/footerdown'
 import whatweoffer from '../components/whatweoffer'
-// import ourteam from '../components/ourteam'
 
 export default {
 name: 'About',
@@ -29,8 +30,7 @@ components: {
  navupper,
 navlower,
 whatweoffer,
-// ourteam,
-    footerup,
+footerup,
 footerdown
 },
 methods:{
