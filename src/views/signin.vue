@@ -48,16 +48,16 @@ export default {
     },
     created()
     {
-     this.earr=JSON.parse(localStorage.getItem('e_arr')) || [];
-     this.parr=JSON.parse(localStorage.getItem('p_arr')) || [];
+     this.email=JSON.parse(localStorage.getItem('e_arr'));
+     this.password=JSON.parse(localStorage.getItem('p_arr'));
     },
     methods:{
       sininn(){
-        this.earr.push(this.email);
-        this.parr.push(this.password);
+        // this.earr.push(this.email);
+        // this.parr.push(this.password);
 
-        localStorage.setItem('e_arr',JSON.stringify(this.earr));
-        localStorage.setItem('p_arr',JSON.stringify(this.parr));
+        localStorage.setItem('e_arr',JSON.stringify(this.email));
+        localStorage.setItem('p_arr',JSON.stringify(this.password));
       }
     }
   }
