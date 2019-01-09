@@ -31,6 +31,7 @@ import logiin from './views/logiin.vue'
     {
       path: '/login',
       component: Login,
+      name:'login',
       children: [
       {
         path:'/child1',
