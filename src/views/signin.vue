@@ -8,13 +8,13 @@
     			<form>
 	              <div class="form-group">
 		            <label class="text-primary float-left" for="Name"> Email Id</label>
-		            <input class="form-control" type="email" id="Email" placeholder="Enter your valid Email id">
+		            <input class="form-control" type="email" id="Email" placeholder="Enter your valid Email id" v-model="email">
 		            <label class="text-primary float-left" for="Name"> Password</label>
-		            <input class="form-control" type="password" id="password" placeholder="Enter password"><br>
+		            <input class="form-control" type="password" id="password" placeholder="Enter password" v-model="password"><br>
 		            <div class="d-flex justify-content-start pl-3"><label class="form-check-label">
         		    <input type="checkbox" class="form-check-input">Stay Sign in
         	         </label></div><br>
-                     <button class="btn btn-primary btn-block" >SignIn</button>
+                    <router-link to="/logiin"><button class="btn btn-primary btn-block" @click="sininn">SignIn</button></router-link>
 	               </div>
 	           </form>
     		</div>
@@ -37,8 +37,31 @@ export default {
     navlower,
         footerup,
     footerdown
+  },
+  data:function(){
+    return{
+      email:"",
+      earr:[],
+      password:"",
+      parr:[],
+     }
+    },
+    created()
+    {
+     this.earr=JSON.parse(localStorage.getItem('e_arr')) || [];
+     this.parr=JSON.parse(localStorage.getItem('p_arr')) || [];
+    },
+    methods:{
+      sininn(){
+        this.earr.push(this.email);
+        this.parr.push(this.password);
+
+        localStorage.setItem('e_arr',JSON.stringify(this.earr));
+        localStorage.setItem('p_arr',JSON.stringify(this.parr));
+      }
+    }
   }
-}
+
 </script>
 
 <style>

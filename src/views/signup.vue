@@ -22,12 +22,10 @@
             <br>
             <div>
               <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="sign in" value="sign inn" v-model="sendMail1">Sign In
+                <input type="checkbox" class="form-check-input" id="sign in" value="sign inn" v-model="sendMail">Sign In
               </label>
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="sign out" value="sign Out" v-model="sendMail1">LogOut
-              </label>
-              <textarea id="message" rows="5" class="form-control" v-model="message">
+
+              <textarea id="message" rows="5" class="form-control" v-model="message" placeholder="lease Enter Your Feedback">
               </textarea>
 
               <label  class="Male">
@@ -36,7 +34,7 @@
              <label  class="Male">
                <input type="radio" id="Female" value="Female" v-model="gender">Female
              </label>
-
+              <br>
              <label class="priority">Priority</label>
              <select id="priority" class="form-control" v-model="selpri">
               <option v-for="option in options" >{{option}}</option>
@@ -51,18 +49,7 @@
     </div>
   </div>
 </div>
-<!-- <div>
-  <p>{{userData.name}}</p>
-  <p>{{userData.email}}</p>
-  <p>{{userData.phnumber}}</p>
-  <p>{{userData.password}}</p>
-  <p style="white-space:pre">{{userData.message}}</p>
-  <ol>
-    <li v-for="item in userData.sendMail">{{ item }}</li>
-  </ol>
-  <p>{{userData.gender}}</p>
-  <p>{{userData.selpri}}</p>
-</div> -->
+
 <footerup></footerup>
 <footerdown></footerdown>
 </div>
@@ -96,9 +83,10 @@
         pharr:[],
         password:'',
         psarr:[],
-        message:'Default',
+        message:'',
         marr:[],
-        sendMail:[],
+        sendMail:'true',
+        smarr:[],
         gender:'male',
         garr:[],
         selpri:'High',
@@ -114,6 +102,7 @@
          this.marr=JSON.parse(localStorage.getItem('id4')) || [];
          this.garr=JSON.parse(localStorage.getItem('id5')) || [];
          this.sarr=JSON.parse(localStorage.getItem('id6')) || [];
+         this.smarr=JSON.parse(localStorage.getItem('id7')) || [];
   },
   methods:
   {
@@ -125,6 +114,7 @@
     this.marr.push(this.message);
     this.garr.push(this.gender);
     this.sarr.push(this.selpri);
+    this.smarr.push(this.sendMail);
 
      localStorage.setItem('id',JSON.stringify(this.earr));
      localStorage.setItem('id1',JSON.stringify(this.narr));
@@ -133,6 +123,7 @@
      localStorage.setItem('id4',JSON.stringify(this.marr));
      localStorage.setItem('id5',JSON.stringify(this.garr));
      localStorage.setItem('id6',JSON.stringify(this.sarr));
+     localStorage.setItem('id7',JSON.stringify(this.smarr));
     }
   }
 

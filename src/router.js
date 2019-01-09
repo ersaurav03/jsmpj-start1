@@ -10,6 +10,7 @@
   import child1 from './views/child1.vue'
   import child2 from './views/child2.vue'
   import child3 from './views/child3.vue'
+import logiin from './views/logiin.vue'
   // import purchasenow from './components/purchasenow.vue'
   Vue.use(Router)
 
@@ -67,6 +68,12 @@
       path:'/check',
       name:'check',
       component:check
-    }
+    },
+     {
+      path:'/logiin',
+      name:'logiin',
+      component:logiin
+     }
+
     ]
   })

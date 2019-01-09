@@ -39,10 +39,15 @@
                                   </td>
 
                                       <td>
-                                    <th scope="row">Priority og User</th>
+                                    <th scope="row">Priority of User</th>
                                     <tr v-for="sarr1 in sarr">{{sarr1}}</tr>
                                   </td>
+                                   
 
+                                      <td>
+                                    <th scope="row">User Want to stay Sign in</th>
+                                    <tr v-for="smarr1 in smarr">{{smarr1}}</tr>
+                                  </td>
                               </tr>
                           </thead>
                       </table>
@@ -87,7 +92,8 @@
                 psarr:[],
                 message:'Default',
                 marr:[],
-                sendMail:[],
+                sendMail:'true',
+                smarr:[],
                 gender:'male',
                 garr:[],
                 selpri:'High',
@@ -104,6 +110,7 @@
            this.marr=JSON.parse(localStorage.getItem('id4')) || [];
            this.garr=JSON.parse(localStorage.getItem('id5')) || [];
            this.sarr=JSON.parse(localStorage.getItem('id6')) || [];
+          this.smarr=JSON.parse(localStorage.getItem('id7')) || [];
        }
 
    }
