@@ -4,13 +4,13 @@
   <navlower></navlower>	
   <div class="container">
   	<div class="row">
-  		<div class="col-xs-4">
-         <h6>Hello User:--{{earr}}</h6>
+  		<div class="col-sm-4 bg-success">
+         <h6> <img src="../../public/images/user.jpg" height="80px" width="80px"> Hello User:--{{earr}}</h6>
   		</div>
-            <div class="col-sm-4">
-         <h6>Pleasure to serve</h6>
+            <div class="col-sm-4 bg-primary">
+         <h1>Pleasure to serve</h1>
       </div>
-            <div class="col-xs-4">
+            <div class="col-sm-4 bg-dark">
         <router-link to="/login"> <button class="btn btn-primary" @click="flushh"> signout</button></router-link>
       </div>
   	</div>
