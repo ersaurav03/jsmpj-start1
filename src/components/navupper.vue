@@ -1,7 +1,7 @@
 <template>
 	<!-----------------------------------------------------Upper anvbar starts------------------------------------------------------------------>
-	<div class="bg-dark">
-		<div class="container bg-dark text-light">
+	<div v-drz1:background="'rgba(0,0,0,1.0)'">
+		<div v-drz1:background="'rgba(0,0,0,1.0)'" class="container text-light">
 			<div class="row fontsizees">
 
                                                          <!----------Code for Phone number----------->

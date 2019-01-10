@@ -5,9 +5,9 @@
 				<div class="d-flex justify-content-center"></div>
 			</div>
 
-			<div class="col-sm-6 col-md-6 col-lg-6  text-light">
+			<div class="col-sm-6 col-md-6 col-lg-6 " v-drz2:color="'rgba(255,255,255,1.0)'">
 				<div class="row">
-					<div class="col-sm-6 col-md-6 p-5  border border-light bg-dark" v-bind:key="arr1" v-for="arr1 in arr">
+					<div v-drz1:background="'rgba(0,0,0,1.0)'" class="col-sm-6 col-md-6 p-5  border border-light " v-bind:key="arr1" v-for="arr1 in arr">
 						<div class="d-flex justify-content-start"><i :class="arr1.i1"></i></div><br>
 						<div class="d-flex justify-content-start"><b text-light>{{arr1.h}}</b></div>
 						<div class="d-flex justify-content-start"><i :class="arr1.i2" aria-hidden="true"></i></div>

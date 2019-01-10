@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-light">
+	<div v-drz>
 		<div class="container ">
 
 			<div class="d-flex justify-content-start">

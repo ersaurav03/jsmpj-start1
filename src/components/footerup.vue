@@ -1,14 +1,14 @@
 <template>
-<div class=" footerup1">
-<div class="container footerup1">
+<div v-local-dr="'rgba(0,0,0,1.0)'">
+<div class="container " v-local-dr="'rgba(0,0,0,1.0)'">
 <div class="row">
 
-<div class="col-md-3 footerup1 text-light">
+<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-3  text-light">
 	<div class="col-md-12 footerup1  d-flex justify-content-start">
 		<div class="d-flex justify-content-start"> <img src="../../public/images/logo01.png"></div>
 	</div>
 
-	<div class="col-md-12 footerup1  d-flex justify-content-end">
+	<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-12 d-flex justify-content-end">
 		<address>
 			98 North 39th Street, Suite 836 NY 8362-1800<br>
 			Phone: (030) 333 456 789 - 686<br>
@@ -16,22 +16,22 @@
 		</address>
 	</div>
 
-	<div class="col-md-12 footerup1 ">
+	<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-12">
 		<h4>FOLLOW US ON</h4>
 		<br>
 		<i v-bind:key="i2" v-for="i2 in icon1" :class="i2.d" data-toggle="tooltip" data-placement="top" :title="i2.t"> </i>
 	</div>
 </div>
 
-<div class="col-md-3 footerup text-light d-flex justify-content-start"> 
-	<div class="col-md-12 footerup ">
+<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-3  text-light d-flex justify-content-start"> 
+	<div class="col-md-12  ">
 		<h4>INFORAMTION</h4>
 		<a href="#" v-bind:key="i" v-for="i in Info"><h6 class="d-flex justify-content-start text-light"> {{i}}</h6></a>
 
 	</div>
 </div>
 
-<div class="col-md-3 footerup text-light">
+<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-3 text-light">
 	<div class="col-md-12 footerup1">
 		<h4>LATEST TWEETS</h4>
 		<div class="row">
@@ -42,7 +42,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-12 footerup1 text-light">
+	<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-12 text-light">
 			<div class="row">
 				<div class="col-sm-2 col-md-2 col-lg-2">
 					<i class="text-primary fab fa-twitter fa-2x"></i>
@@ -56,8 +56,8 @@
 	</div>
 </div>
 
-<div class="col-md-3 footerup text-light">
-<div class="col-sm-12 footerup1">
+<div class="col-md-3  text-light">
+<div class="col-sm-12 " v-local-dr="'rgba(0,0,0,1.0)'">
 	<h4>PHOTO STREAMS</h4>
 	<div class="row">
 		<div class=" col-sm-4 col-md-4 col-lg-4" v-bind:key="p1" v-for="p1 in pict"> <img :src="p1" class="img-responsive" height="50px" width="85px"></div>
@@ -65,7 +65,7 @@
 </div>
 		<br>
 
-<div class="col-md-12 footerup1 text-light">
+<div v-local-dr="'rgba(0,0,0,1.0)'" class="col-md-12 text-light">
 	<div><i class="fab fa-instagram"></i>Follow on Instagram</div>
 </div>
 </div>
@@ -75,11 +75,6 @@
 </template>
 
 <style>
-div.footerup1
-{
-background-color: rgba(0,0,0,1.0);
-border-style: none;
-}
 </style>
 
 <script>
@@ -114,6 +109,13 @@ data:function(){
          'images/05.jpg',
          'images/06.jpg'
 		]
+	}
+},
+directives:{
+	'local-dr':{
+		bind(el,binding,vnode){
+			el.style.backgroundColor=binding.value;
+		}
 	}
 }
 }
