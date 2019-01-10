@@ -6,7 +6,7 @@
                  <div class="col-sm-6 col-md-6 col-lg-1 ocust  border border-light ">     	
                  </div>
 
-				<div class="col-sm-6 col-md-6 col-lg-2 ocust  border border-light " v-for="arr1 in arr">
+				<div class="col-sm-6 col-md-6 col-lg-2 ocust  border border-light" v-bind:key="arr1" v-for="arr1 in arr">
 					<div class="d-flex justify-content-center "><img  :src="arr1" class="img-responsive" height="100px" width="150px"></div>
 				</div>
 

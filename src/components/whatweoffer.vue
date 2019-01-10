@@ -8,7 +8,7 @@
 
 			<div class="row">
 
-				<div class="col-sm-4 col-md-4 col-lg-4 wwoffer  border border-light" v-for="link1 in linkk">
+				<div class="col-sm-4 col-md-4 col-lg-4 wwoffer  border border-light" v-bind:key="link1" v-for="link1 in linkk">
 					<div class="d-flex justify-content-center p-2">
 						<div class="view overlay">
 							<img v-bind:src="link1.picture" class="img-responsive" height="350px" width="350px">
@@ -23,7 +23,7 @@
 					</div>	
 
 					<div class="text-justify">
-						<p><h6>{{link1.parag}}</h6></p>
+						<h6>{{link1.parag}}</h6>
 					</div>
 
 				</div>

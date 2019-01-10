@@ -64,58 +64,56 @@
 </template>
 
 
-    <style>
+<style>
 
-    </style>
-    <script>
-
-     
-      import navupper from '../components/navupper.vue'
-      import navlower from '../components/navlower.vue'
-      import footerup from '../components/footerup'
-      import footerdown from '../components/footerdown'
-      export default
+</style>
+<script>
+  import navupper from '../components/navupper.vue'
+  import navlower from '../components/navlower.vue'
+  import footerup from '../components/footerup'
+  import footerdown from '../components/footerdown'
+  export default
+  {
+      components:
       {
-          components:
-          {
-              navupper,
-              navlower,
-              footerup,
-              footerdown,
+          navupper,
+          navlower,
+          footerup,
+          footerdown,
 
-          },
-          data:function(){
-              return{
-                  email:'',
-                  earr:[],
-                  name:'',
-                  narr:[],
-                  phnumber:'',
-                  pharr:[],
-                  password:'',
-                  psarr:[],
-                  message:'Default',
-                  marr:[],
-                  sendMail:'true',
-                  smarr:[],
-                  gender:'male',
-                  garr:[],
-                  selpri:'High',
-                  sarr:[],
-                  options:['Higher', 'Medium', 'Low']
-              }
-          },
-          created()
-          {
-             this.earr=JSON.parse(localStorage.getItem('id')) || [];
-             this.narr=JSON.parse(localStorage.getItem('id1')) || [];
-             this.pharr=JSON.parse(localStorage.getItem('id2')) || [];
-             this.psarr=JSON.parse(localStorage.getItem('id3')) || [];
-             this.marr=JSON.parse(localStorage.getItem('id4')) || [];
-             this.garr=JSON.parse(localStorage.getItem('id5')) || [];
-             this.sarr=JSON.parse(localStorage.getItem('id6')) || [];
-            this.smarr=JSON.parse(localStorage.getItem('id7')) || [];
-         }
-
+      },
+      data:function(){
+          return{
+              email:'',
+              earr:[],
+              name:'',
+              narr:[],
+              phnumber:'',
+              pharr:[],
+              password:'',
+              psarr:[],
+              message:'Default',
+              marr:[],
+              sendMail:'true',
+              smarr:[],
+              gender:'male',
+              garr:[],
+              selpri:'High',
+              sarr:[],
+              options:['Higher', 'Medium', 'Low']
+          }
+      },
+      created()
+      {
+         this.earr=JSON.parse(localStorage.getItem('id')) || [];
+         this.narr=JSON.parse(localStorage.getItem('id1')) || [];
+         this.pharr=JSON.parse(localStorage.getItem('id2')) || [];
+         this.psarr=JSON.parse(localStorage.getItem('id3')) || [];
+         this.marr=JSON.parse(localStorage.getItem('id4')) || [];
+         this.garr=JSON.parse(localStorage.getItem('id5')) || [];
+         this.sarr=JSON.parse(localStorage.getItem('id6')) || [];
+        this.smarr=JSON.parse(localStorage.getItem('id7')) || [];
      }
-    </script>
+
+ }
+</script>

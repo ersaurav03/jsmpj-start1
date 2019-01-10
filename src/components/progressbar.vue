@@ -17,7 +17,7 @@
 				</div>
 				<div class="col col-sm-6 col-md-6 ">
 					<div class="row">
-						<div class="col col-sm-12 col-md-12 col-lg-12 wwchose1" v-for="arr1 in arr">
+						<div class="col col-sm-12 col-md-12 col-lg-12 wwchose1" v-bind:key="arr1" v-for="arr1 in arr">
 							<h6>{{arr1.h}}</h6>
 							<div class="progress sm-progress">
 								<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated " :class="arr1.w" role="progressbar"  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>

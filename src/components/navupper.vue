@@ -20,11 +20,9 @@
 
                                                         <!--------------Code for icons---------------->
 				<div class=" col-sm-12 col-lg-2 my-1"> 
-					<i v-for="arr1 in arr" :class="arr1" aria-hidden="true"></i>
+					<i v-bind:key="arr1" v-for="arr1 in arr" :class="arr1" aria-hidden="true"></i>
 
-				</div> 
-
-				                                        <!------Code for space interms of coluns------>
+				</div> 			                                      <!------Code for space interms of coluns------>
                 <div class=" col-sm-12 col-lg-1 "> 
                 </div>
 

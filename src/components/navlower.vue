@@ -48,7 +48,7 @@ export default{
 	},
 	created()
 	{
-		eventBus.$on('counter',(data) => {
+		eventBus.$on('counter03',(data) => {
 			this.counter = data;
 		})	
 	}

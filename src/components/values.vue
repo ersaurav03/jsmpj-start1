@@ -7,11 +7,11 @@
 
 			<div class="col-sm-6 col-md-6 col-lg-6  text-light">
 				<div class="row">
-					<div class="col-sm-6 col-md-6 p-5  border border-light bg-dark " v-for="arr1 in arr">
+					<div class="col-sm-6 col-md-6 p-5  border border-light bg-dark" v-bind:key="arr1" v-for="arr1 in arr">
 						<div class="d-flex justify-content-start"><i :class="arr1.i1"></i></div><br>
 						<div class="d-flex justify-content-start"><b text-light>{{arr1.h}}</b></div>
 						<div class="d-flex justify-content-start"><i :class="arr1.i2" aria-hidden="true"></i></div>
-						<div class="text-justify"><p><h6>{{arr1.p}}</h6></p></div>
+						<div class="text-justify"><h6>{{arr1.p}}</h6></div>
 					</div>
 				</div>
 			</div>

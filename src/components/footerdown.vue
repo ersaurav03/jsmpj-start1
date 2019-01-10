@@ -9,7 +9,7 @@
 			</div>
 
 			<div class="col-sm-6 footerdown p-3 d-flex justify-content-end" >
-				<i v-for="arr1 in arr" :class="arr1"></i>
+				<i v-bind:key="arr1" v-for="arr1 in arr" :class="arr1"></i>
 			</div>
 
 		</div>

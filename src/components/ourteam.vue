@@ -7,7 +7,7 @@
 				<div class="col col-sm-6 col-md-6 col-lg-1 ">
 					
 				</div>
-				<div class=" col-sm-6 col-md-6 col-lg-2 " v-for="arr1 in arr">
+				<div class=" col-sm-6 col-md-6 col-lg-2" v-bind:key="arr1" v-for="arr1 in arr">
 					<div class="d-flex justify-content-center "><div class="view overlay">
 						<img :src="arr1.p" class="img-responsive" height="250px" width="150px">
 						<div class="mask flex-center rgba-white-strong"><h6 class="text-light"></h6>
