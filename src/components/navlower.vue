@@ -39,7 +39,7 @@ export default{
 			navv: [
 			{name:'HOME', link:'/'},
 			{name:'ABOUT',link:'/About'},
-			{name:'CONTACTS',link:'/'},
+			{name:'PRODUCTS',link:'/Products'},
 			{name:'ACCOUNT',link:'/login'},
 			{name:'PAGES',link:'/'}
 			]
