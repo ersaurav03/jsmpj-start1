@@ -41,7 +41,7 @@ export default{
 			{name:'ABOUT',link:'/About'},
 			{name:'PRODUCTS',link:'/Products'},
 			{name:'ACCOUNT',link:'/login'},
-			{name:'PAGES',link:'/'}
+			{name:'PAGES',link:'/pages'}
 			]
 			
 		}

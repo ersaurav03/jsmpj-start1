@@ -12,6 +12,7 @@ import child2 from './views/child2.vue'
 import child3 from './views/child3.vue'
 import logiin from './views/logiin.vue'
 import Products from './views/Products.vue'
+import pages from './views/pages.vue'
 // import purchasenow from './components/purchasenow.vue'
 Vue.use(Router)
 
@@ -80,6 +81,11 @@ export default new Router({
     path:'/Products',
     name:'Products',
     component:Products
+   },
+   {
+    path:'/pages',
+    name:'pages',
+    component:pages
    }
 
   ]

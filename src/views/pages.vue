@@ -1,7 +1,7 @@
 <template>
-<div class="About">
+<div class="pages">
 <navupper></navupper>
-<navlower></navlower>	
+<navlower></navlower>
 <div class="container">
 <div class="card">
   <div class="card-header d-flex justify-content-start">
@@ -16,7 +16,7 @@
 	</div>  
   </div>
   <div class="card-body">
-    <h5 class="card-title">Services are Available in Our Company</h5>
+    <h5 class="card-title">Services are Available in Our (Company It is done though global mixins) </h5>
     <ol class="card-text">
     	<li v-for="fruit in filteredFruits">
     		<p>{{fruit}}</p>
@@ -28,12 +28,11 @@
   Last Update About Product 2 days ago
   </div>
 </div>
-</div>
+</div>	
 <footerup></footerup>
 <footerdown></footerdown>
 </div>
 </template>
-
 
 <script>
 import navupper from '../components/navupper.vue'
@@ -41,8 +40,9 @@ import navlower from '../components/navlower.vue'
 import footerup from '../components/footerup'
 import footerdown from '../components/footerdown'
 import whatweoffer from '../components/whatweoffer'
-
+import { mixxx } from '../Mixing';
 export default {
+mixins:[mixxx],
 name: 'About',
 components: {
  navupper,
@@ -51,25 +51,13 @@ whatweoffer,
 footerup,
 footerdown
 },
-data() {
-return{
-	filterText:'',
-	p:'Product',
-	fruits:['Advisory','Financial','Inforation & Technology','Banking','Insurance','Mutual Funds','Forex','Share Broking']
-}
-},
+
 methods:{
 navigateToHome(){
     this.$router.push('/');
 }
 },
-computed:{
-	filteredFruits(){
-		return this.fruits.filter((element) => {
-            return element.match(this.filterText);
-		});
-	}
-},
+
 filters:{
 	toUppercase(value){
 		return value.toUpperCase();
