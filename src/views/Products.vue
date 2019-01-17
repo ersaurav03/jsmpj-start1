@@ -19,7 +19,13 @@
           <h5 class="card-title">Services are Available in Our Company</h5>
           <ol class="card-text">
            <li v-bind:key="fruit" v-for="fruit in filteredFruits">
-            <p>{{fruit}}</p>
+           <!--  <p>{{fruit}}</p> -->
+           <div class="card">
+              <div class="card-header text-success bg-dark" v-model="save"><h6>{{fruit}}</h6></div>
+               <div class="card-body" >Content</div>
+                 <div class="card-footer">Footer</div>
+             
+           </div>
           </li>
         </ol>
         <router-link to="/" class="btn btn-primary">Go To Home</router-link>
@@ -54,8 +60,13 @@
 data() {
   return{
   filterText:'',
+  save:'',
 	p:'Product',
-  fruits:['Advisory','Financial','Inforation & Technology','Banking','Insurance','Mutual Funds','Forex','Share Broking']
+  fruits:['Advisory','Financial','Inforation & Technology','Banking','Insurance','Mutual Funds','Forex','Share Broking'],
+  data:[
+  {d:'Data',f:'Footer'},
+  {d:'Data1',f:'Footer1'},
+  ]
   }
 },
 methods:{
